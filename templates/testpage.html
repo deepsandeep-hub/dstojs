@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h2>Launches vs Sold trends (from 2015 - 2021)</h2>
+    <div id='chart' class='chart'”></div>
+                                     
+    <form action = "" method = "post">
+        <p>Enter the City Name:</p>
+        <p><input type = "text" name = "City" /></p>
+        <p><input type = "submit" onclick={recieve()} value = "submit" /></p>
+    </form>
+</body>
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type='text/javascript'>
+var graphs = graphJSON || safe ;
+Plotly.plot('chart',graphs,{});
+</script>
+</html>

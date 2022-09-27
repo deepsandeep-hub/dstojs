@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <!-- <head> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>GRAPH</title>
+    <style>
+        .container1{
+            height: 100px;
+            width: 200px;
+            border: 2px solid black;
+            margin-right: 30px;
+        }
+    </style>
+    <style>
+      .container2{
+          height: 100px;
+          width: 200px;
+          border: 2px solid black;
+          margin-left: 1000px;
+          align-content: center;
+      }
+  </style> -->
+  <!-- </head> -->
+ <body>
+  <h2>Launches vs Sold trends (from 2015 - 2021)</h2>
+  <div id='chart' class='chart'”></div>
+  <button onclick="window.open('http://127.0.0.1:5000/ahmedabad')" class="accordion">AHMEDABAD</button>
+  <div class="panel">
+  </div>
+  <button onclick = "window.open('http://127.0.0.1:5000/bangalore')" class="accordion">BANGALORE</button>
+  <div class="panel">
+  </div>
+  <button onclick = "window.open('http://127.0.0.1:5000/chennai')" class="accordion">CHENNAI</button>
+  <div class="panel">
+  </div>
+  <button onclick = "window.open('http://127.0.0.1:5000/delhi')" class="accordion">DELHI</button>
+  <div class="panel">
+  </div>
+  <button onclick = "window.open('http://127.0.0.1:5000/hyderabad')" class="accordion">HYDERABAD</button>
+  <div class="panel">
+  </div>
+  <button onclick = "window.open('http://127.0.0.1:5000/kolkata')" class="accordion">KOLKATA</button>
+  <div class="panel">
+  </div>
+  <button onclick = "window.open('http://127.0.0.1:5000/mumbai')" class="accordion">MUMBAI</button>
+  <div class="panel">
+  </div>
+  <button onclick = "window.open('http://127.0.0.1:5000/pune')" class="accordion">PUNE</button>
+  <div class="panel">
+  </div>
+  <button onclick = "window.open('http://127.0.0.1:5000/india')" class="accordion">ALL INDIA</button>
+  <div class="panel">
+  </div>
+
+  <!-- <div class="container1">
+    <h1 style="text-align:center;"> KOLKATA </h1>
+    <a href="http://127.0.0.1:5000/kolkata">
+        <button class="btn btn-primary btn-lg">Click to see the GRAPH</button>
+    </a>
+</div> -->
+<!-- <div class="container2">
+  <h1 style="text-align:center;"> DELHI</h1>
+  <a href="http://127.0.0.1:5000/delhi">
+      <button class="btn btn-primary btn-lg">Click to see the GRAPH</button>
+  </a>
+</div> -->
+</body>
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type='text/javascript'>
+  var graphs = graphJSON || safe
+  Plotly.plot('chart',graphs,{});
+</script>
+</html>
